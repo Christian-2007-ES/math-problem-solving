@@ -24,13 +24,16 @@
 		$\dfrac{1}{a(b+1)}+\dfrac{1}{b(c+1)}+\dfrac{1}{c(a+1)}\geq\dfrac{3}{1+abc}.$
 	\end{center}
 	
-	\textbf{Solución:} Factorizando:
-	\[
-	(x+1)(x+2)=0
-	\]
-	Por tanto,
-	\[
-	x=-1 \quad \text{o} \quad x=-2
-	\]
-	
+	\textbf{Solución:} Usando la notación de sumatorio cíclico la desigualdad se convierte en
+	\begin{center}
+		$\displaystyle\sum_{cyc}\dfrac{1}{a(b+1)}\geq\dfrac{3}{1+abc}$.
+	\end{center}
+	 Ahora por ser $a,b,c>0$, tenemos que
+	\begin{center}
+		$\displaystyle\sum_{cyc}\dfrac{1}{a(b+1)}\geq\dfrac{3}{1+abc}\Leftrightarrow (1+abc)\displaystyle\sum_{cyc}\dfrac{1}{a(b+1)}=\sum_{cyc}\dfrac{1+abc}{a(b+1)}\geq3\Leftrightarrow\sum_{cyc}\dfrac{1+abc}{a(b+1)}+1\geq6\Leftrightarrow\sum_{cyc}\dfrac{1+abc+ab+a}{a(b+1)}=\sum_{cyc}\dfrac{1+a+ab(1+c)}{a(b+1)}\geq6\Leftrightarrow\sum_{cyc}\dfrac{1+a}{a(b+1)}+\dfrac{b(1+c)}{b+1}\geq6$.
+	\end{center}
+	Basta probar la ultima desigualdad, por la desigualdad entre las media aritmética y geométrica tenemos que
+	\begin{center}
+		$\displaystyle\sum_{cyc}\dfrac{1+a}{a(b+1)}+\dfrac{b(1+c)}{b+1}\geq6\sqrt[6]{\prod_{cyc}\dfrac{(1+a)b(1+c)}{a(b+1)^2}}=6\sqrt[6]{\dfrac{abc(a+1)^2(b+1)^2(c+1)^2}{abc(a+1)^2(b+1)^2(c+1)^2}}=6$.
+	\end{center}
 \end{document}
